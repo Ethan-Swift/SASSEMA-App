@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C051AD5288078DF00613458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051AD4288078DF00613458 /* AppDelegate.swift */; };
+		2C051AD7288078DF00613458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051AD6288078DF00613458 /* SceneDelegate.swift */; };
+		2C051ADC288078DF00613458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C051ADA288078DF00613458 /* Main.storyboard */; };
+		2C051ADE288078E100613458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C051ADD288078E100613458 /* Assets.xcassets */; };
+		2C051AE1288078E100613458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C051ADF288078E100613458 /* LaunchScreen.storyboard */; };
+		2C051AEC288078E100613458 /* SASSEMA_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051AEB288078E100613458 /* SASSEMA_AppTests.swift */; };
+		2C051AF6288078E100613458 /* SASSEMA_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051AF5288078E100613458 /* SASSEMA_AppUITests.swift */; };
+		2C051AF8288078E100613458 /* SASSEMA_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051AF7288078E100613458 /* SASSEMA_AppUITestsLaunchTests.swift */; };
+		2C051B0828807ED600613458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051B0728807ED600613458 /* ViewController.swift */; };
+		2C051B0A28807F2500613458 /* LocationSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051B0928807F2500613458 /* LocationSensor.swift */; };
+		2C051B0E28807F9100613458 /* WiFiSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051B0D28807F9100613458 /* WiFiSensor.swift */; };
+		2C051B1028807FA200613458 /* Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051B0F28807FA200613458 /* Save.swift */; };
+		2C051B1228807FBA00613458 /* CreateButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051B1128807FBA00613458 /* CreateButtons.swift */; };
+		2C051B1428807FCA00613458 /* ActivitySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C051B1328807FCA00613458 /* ActivitySensor.swift */; };
+		2CDE72AA293842070029D13B /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE72A9293842070029D13B /* Upload.swift */; };
+		2CDE72AE29411B9A0029D13B /* DataAgreementForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDE72AD29411B9A0029D13B /* DataAgreementForm.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C051AE8288078E100613458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C051AC9288078DE00613458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C051AD0288078DE00613458;
+			remoteInfo = "SASSEMA App";
+		};
+		2C051AF2288078E100613458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C051AC9288078DE00613458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C051AD0288078DE00613458;
+			remoteInfo = "SASSEMA App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C051AD1288078DF00613458 /* SASSEMA App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SASSEMA App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C051AD4288078DF00613458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C051AD6288078DF00613458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C051ADB288078DF00613458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C051ADD288078E100613458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C051AE0288078E100613458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C051AE2288078E100613458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C051AE7288078E100613458 /* SASSEMA AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SASSEMA AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C051AEB288078E100613458 /* SASSEMA_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SASSEMA_AppTests.swift; sourceTree = "<group>"; };
+		2C051AF1288078E100613458 /* SASSEMA AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SASSEMA AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C051AF5288078E100613458 /* SASSEMA_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SASSEMA_AppUITests.swift; sourceTree = "<group>"; };
+		2C051AF7288078E100613458 /* SASSEMA_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SASSEMA_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C051B0428807B8900613458 /* SASSEMA App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SASSEMA App.entitlements"; sourceTree = "<group>"; };
+		2C051B0728807ED600613458 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C051B0928807F2500613458 /* LocationSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSensor.swift; sourceTree = "<group>"; };
+		2C051B0D28807F9100613458 /* WiFiSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiFiSensor.swift; sourceTree = "<group>"; };
+		2C051B0F28807FA200613458 /* Save.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Save.swift; sourceTree = "<group>"; };
+		2C051B1128807FBA00613458 /* CreateButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateButtons.swift; sourceTree = "<group>"; };
+		2C051B1328807FCA00613458 /* ActivitySensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitySensor.swift; sourceTree = "<group>"; };
+		2CDE72A9293842070029D13B /* Upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
+		2CDE72AD29411B9A0029D13B /* DataAgreementForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataAgreementForm.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C051ACE288078DE00613458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C051AE4288078E100613458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C051AEE288078E100613458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C051AC8288078DE00613458 = {
+			isa = PBXGroup;
+			children = (
+				2C051AD3288078DF00613458 /* SASSEMA App */,
+				2C051AEA288078E100613458 /* SASSEMA AppTests */,
+				2C051AF4288078E100613458 /* SASSEMA AppUITests */,
+				2C051AD2288078DF00613458 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C051AD2288078DF00613458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C051AD1288078DF00613458 /* SASSEMA App.app */,
+				2C051AE7288078E100613458 /* SASSEMA AppTests.xctest */,
+				2C051AF1288078E100613458 /* SASSEMA AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C051AD3288078DF00613458 /* SASSEMA App */ = {
+			isa = PBXGroup;
+			children = (
+				2C051B0428807B8900613458 /* SASSEMA App.entitlements */,
+				2C051AD4288078DF00613458 /* AppDelegate.swift */,
+				2C051AD6288078DF00613458 /* SceneDelegate.swift */,
+				2C051B0728807ED600613458 /* ViewController.swift */,
+				2C051B0928807F2500613458 /* LocationSensor.swift */,
+				2C051B0D28807F9100613458 /* WiFiSensor.swift */,
+				2C051B0F28807FA200613458 /* Save.swift */,
+				2CDE72A9293842070029D13B /* Upload.swift */,
+				2C051B1128807FBA00613458 /* CreateButtons.swift */,
+				2C051B1328807FCA00613458 /* ActivitySensor.swift */,
+				2C051ADA288078DF00613458 /* Main.storyboard */,
+				2C051ADD288078E100613458 /* Assets.xcassets */,
+				2C051ADF288078E100613458 /* LaunchScreen.storyboard */,
+				2CDE72AD29411B9A0029D13B /* DataAgreementForm.storyboard */,
+				2C051AE2288078E100613458 /* Info.plist */,
+			);
+			path = "SASSEMA App";
+			sourceTree = "<group>";
+		};
+		2C051AEA288078E100613458 /* SASSEMA AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C051AEB288078E100613458 /* SASSEMA_AppTests.swift */,
+			);
+			path = "SASSEMA AppTests";
+			sourceTree = "<group>";
+		};
+		2C051AF4288078E100613458 /* SASSEMA AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C051AF5288078E100613458 /* SASSEMA_AppUITests.swift */,
+				2C051AF7288078E100613458 /* SASSEMA_AppUITestsLaunchTests.swift */,
+			);
+			path = "SASSEMA AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C051AD0288078DE00613458 /* SASSEMA App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C051AFB288078E100613458 /* Build configuration list for PBXNativeTarget "SASSEMA App" */;
+			buildPhases = (
+				2C051ACD288078DE00613458 /* Sources */,
+				2C051ACE288078DE00613458 /* Frameworks */,
+				2C051ACF288078DE00613458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SASSEMA App";
+			productName = "SASSEMA App";
+			productReference = 2C051AD1288078DF00613458 /* SASSEMA App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C051AE6288078E100613458 /* SASSEMA AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C051AFE288078E100613458 /* Build configuration list for PBXNativeTarget "SASSEMA AppTests" */;
+			buildPhases = (
+				2C051AE3288078E100613458 /* Sources */,
+				2C051AE4288078E100613458 /* Frameworks */,
+				2C051AE5288078E100613458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C051AE9288078E100613458 /* PBXTargetDependency */,
+			);
+			name = "SASSEMA AppTests";
+			productName = "SASSEMA AppTests";
+			productReference = 2C051AE7288078E100613458 /* SASSEMA AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C051AF0288078E100613458 /* SASSEMA AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C051B01288078E100613458 /* Build configuration list for PBXNativeTarget "SASSEMA AppUITests" */;
+			buildPhases = (
+				2C051AED288078E100613458 /* Sources */,
+				2C051AEE288078E100613458 /* Frameworks */,
+				2C051AEF288078E100613458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C051AF3288078E100613458 /* PBXTargetDependency */,
+			);
+			name = "SASSEMA AppUITests";
+			productName = "SASSEMA AppUITests";
+			productReference = 2C051AF1288078E100613458 /* SASSEMA AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C051AC9288078DE00613458 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2C051AD0288078DE00613458 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2C051AE6288078E100613458 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 2C051AD0288078DE00613458;
+					};
+					2C051AF0288078E100613458 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 2C051AD0288078DE00613458;
+					};
+				};
+			};
+			buildConfigurationList = 2C051ACC288078DE00613458 /* Build configuration list for PBXProject "SASSEMA App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C051AC8288078DE00613458;
+			productRefGroup = 2C051AD2288078DF00613458 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C051AD0288078DE00613458 /* SASSEMA App */,
+				2C051AE6288078E100613458 /* SASSEMA AppTests */,
+				2C051AF0288078E100613458 /* SASSEMA AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C051ACF288078DE00613458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C051AE1288078E100613458 /* LaunchScreen.storyboard in Resources */,
+				2CDE72AE29411B9A0029D13B /* DataAgreementForm.storyboard in Resources */,
+				2C051ADE288078E100613458 /* Assets.xcassets in Resources */,
+				2C051ADC288078DF00613458 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C051AE5288078E100613458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C051AEF288078E100613458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C051ACD288078DE00613458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CDE72AA293842070029D13B /* Upload.swift in Sources */,
+				2C051B1028807FA200613458 /* Save.swift in Sources */,
+				2C051AD5288078DF00613458 /* AppDelegate.swift in Sources */,
+				2C051B1228807FBA00613458 /* CreateButtons.swift in Sources */,
+				2C051B0828807ED600613458 /* ViewController.swift in Sources */,
+				2C051B0A28807F2500613458 /* LocationSensor.swift in Sources */,
+				2C051AD7288078DF00613458 /* SceneDelegate.swift in Sources */,
+				2C051B1428807FCA00613458 /* ActivitySensor.swift in Sources */,
+				2C051B0E28807F9100613458 /* WiFiSensor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C051AE3288078E100613458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C051AEC288078E100613458 /* SASSEMA_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C051AED288078E100613458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C051AF8288078E100613458 /* SASSEMA_AppUITestsLaunchTests.swift in Sources */,
+				2C051AF6288078E100613458 /* SASSEMA_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C051AE9288078E100613458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C051AD0288078DE00613458 /* SASSEMA App */;
+			targetProxy = 2C051AE8288078E100613458 /* PBXContainerItemProxy */;
+		};
+		2C051AF3288078E100613458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C051AD0288078DE00613458 /* SASSEMA App */;
+			targetProxy = 2C051AF2288078E100613458 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C051ADA288078DF00613458 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C051ADB288078DF00613458 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C051ADF288078E100613458 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C051AE0288078E100613458 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C051AF9288078E100613458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C051AFA288078E100613458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C051AFC288078E100613458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SASSEMA App/SASSEMA App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 857V7A5S36;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SASSEMA App/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location always and when in use";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow location always";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location when in use";
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "university-of-richmond.SASSEMA-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C051AFD288078E100613458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SASSEMA App/SASSEMA App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 857V7A5S36;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SASSEMA App/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location always and when in use";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow location always";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location when in use";
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "university-of-richmond.SASSEMA-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C051AFF288078E100613458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "university-of-richmond.SASSEMA-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SASSEMA App.app/SASSEMA App";
+			};
+			name = Debug;
+		};
+		2C051B00288078E100613458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "university-of-richmond.SASSEMA-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SASSEMA App.app/SASSEMA App";
+			};
+			name = Release;
+		};
+		2C051B02288078E100613458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "university-of-richmond.SASSEMA-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SASSEMA App";
+			};
+			name = Debug;
+		};
+		2C051B03288078E100613458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "university-of-richmond.SASSEMA-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SASSEMA App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C051ACC288078DE00613458 /* Build configuration list for PBXProject "SASSEMA App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C051AF9288078E100613458 /* Debug */,
+				2C051AFA288078E100613458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C051AFB288078E100613458 /* Build configuration list for PBXNativeTarget "SASSEMA App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C051AFC288078E100613458 /* Debug */,
+				2C051AFD288078E100613458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C051AFE288078E100613458 /* Build configuration list for PBXNativeTarget "SASSEMA AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C051AFF288078E100613458 /* Debug */,
+				2C051B00288078E100613458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C051B01288078E100613458 /* Build configuration list for PBXNativeTarget "SASSEMA AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C051B02288078E100613458 /* Debug */,
+				2C051B03288078E100613458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C051AC9288078DE00613458 /* Project object */;
+}
